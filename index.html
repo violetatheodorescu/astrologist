@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <link rel=icon href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800,900|Nunito:300,400,600,700,800,900&display=swap&subset=cyrillic" rel=stylesheet>
+  <title>taro-cards</title>
+  <link href="css/app.180d8610.css" rel=preload as=style>
+  <link href="css/chunk-vendors.6f478f60.css" rel=preload as=style>
+  <link href="css/chunk-vendors.6f478f60.css" rel=stylesheet>
+  <link href="css/app.180d8610.css" rel=stylesheet>
+  <link href="css/style-timer.css" rel=stylesheet>
+</head>
+<body>
+  <main data-v-1247b3cf="" class="main">
+    <div data-v-1247b3cf="" class="quiz" style="min-height: 350px;">
+     
+      <div data-v-1247b3cf="" class="end">
+        <div data-v-1247b3cf="" class="box">
+          <div class="woman">
+            <img src="img/woman.jpg" class="radius" width="150px" height="150px">
+          </div>
+          <div data-v-1247b3cf="" class="box__title">Află acum secretul cărților de tarot alese, fiindcă este foarte important și te va ajuta să iei decizia corectă mai departe!</div>
+          <!--<div data-v-1247b3cf="" class="box__text">Pentru protejarea datelor personale, interpretarea cărților de tarot alese este înregistrată ca un mesaj audio pe un serviciu vocal. Sună de pe mobil chiar acum pentru a obține înregistrarea!</div>
+          <div data-v-1247b3cf="" class="box__timer"> Înregistrarea va fi ștearsă în: <span data-v-1247b3cf=""> 01:26:71  </span> minute </div>-->
+          <div class="timer">
+            <span class="countdown-title">Înregistrarea va fi ștearsă în:</span>
+        <div id="countdown" class="countdown">
+          <!--
+          <div class="countdown-number">
+            <span class="days countdown-time"></span>
+            <span class="countdown-text">Days</span>
+          </div>
+        -->
+          <div class="countdown-number">
+            <span class="hours countdown-time"></span>
+            <span class="countdown-text">Hours</span>
+          </div>
+          <div class="countdown-number">
+            <span class="minutes countdown-time"></span>
+            <span class="countdown-text">Minutes</span>
+          </div>
+          <div class="countdown-number">
+            <span class="seconds countdown-time"></span>
+            <span class="countdown-text">Seconds</span>
+          </div>
+        </div>
+        <script>
+            function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      total: t,
+      /*days: days,*/
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds
+    };
+  }
+   
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    /*var daysSpan = clock.querySelector(".days");*/
+    var hoursSpan = clock.querySelector(".hours");
+    var minutesSpan = clock.querySelector(".minutes");
+    var secondsSpan = clock.querySelector(".seconds");
+   
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+   
+      if (t.total <= 0) {
+        clearInterval(timeinterval);
+        var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
+        initializeClock('countdown', deadline);
+      }
+   
+      /*daysSpan.innerHTML = t.days;*/
+      hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+      minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+    }
+   
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+  }
+   
+  var deadline = new Date(Date.parse(new Date()) + 03 * 60 * 1000);
+  initializeClock("countdown", deadline);
+        </script>
+          </div>
+        </div>
+        <div data-v-1247b3cf="" class="end__text">Sună de pe mobil chiar acum pentru a obține înregistrarea!</div>
+        <div data-v-1247b3cf="" class="end-button"><a data-v-1247b3cf="" href="tel:0903120251" class="btn animated infinite pulse"><span data-v-1247b3cf="" class="btn__text"> Sună și<br data-v-1247b3cf=""> ascultă </span></a></div>
+      </div>
+    </div>
+    <div data-v-7b4d1f3c="" data-v-1247b3cf="" class="footer" style="top: auto; margin-top: 80px;"><p data-v-7b4d1f3c="">Termeni și condiții: prin utilizarea acestui serviciu, confirmi că ai împlinit vârsta de minim 18 ani, aveti acordul titularului cartelei si sunteti de acord cu acesti termeni si conditii. Prin apasarea tastei asculta mesajul veti fi redirectionat catre apelarea numarului sva aferent serviciului. Cost serviciu: 1.7 Euro + tva/minut in orange, vodafone, telekom fix si mobil. Acesta este un serviciu de divertisment. Prin accesarea serviciului sunteti de acord ca puteti primi mesaje de informare de la furnizorul serviciului legate de serviciile de divertisment oferite si noutati. In cazul utilizarii serviciului datele dvs. – Ex. Numarul de telefon, vor fi procesate doar in scopurile de mai sus. Furnizor serviciu: ABCMobile OÜ; Reg № 14710834; adresa: Harju maakond, Tallinn, Peterburi tee 71-318, 11415, Estonia.
+      <a data-v-7b4d1f3c="" href="mailto:Support@abcmobile.com">Support@abcmobile.com</a>. Info serviciu voce: 0318260010, luni-vineri, 9:00-18:00.</p><p data-v-7b4d1f3c="">Affiliate: mobstra.com</p></div>
+  </main>
+  <noscript><strong>We're sorry but taro-cards doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+  <div id=app></div>
+</body>
+</html>
